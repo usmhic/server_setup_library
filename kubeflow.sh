@@ -66,27 +66,25 @@ kustomize build apps/admission-webhook/upstream/overlays/cert-manager | kubectl 
 #Notebooks
 kustomize build apps/jupyter/notebook-controller/upstream/overlays/kubeflow | kubectl apply -f -
 
-Jupyter Web App 
+#Jupyter Web App 
 kustomize build apps/jupyter/jupyter-web-app/upstream/overlays/istio | kubectl apply -f -
 
-Profiles + KFAM
+#Profiles + KFAM
 kustomize build apps/profiles/upstream/overlays/kubeflow | kubectl apply -f -
 
-
-Volumes Web App
+#Volumes Web App
 kustomize build apps/volumes-web-app/upstream/overlays/istio | kubectl apply -f -
 
-
-Tensorboard
+#Tensorboard
 kustomize build apps/tensorboard/tensorboards-web-app/upstream/overlays/istio | kubectl apply -f -
 
-Tensorboard Controller
+#Tensorboard Controller
 kustomize build apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow | kubectl apply -f -
 
-Training Operator
+#Training Operator
 kustomize build apps/training-operator/upstream/overlays/kubeflow | kubectl apply -f -
 
-User Namespace
+#User Namespace
 kustomize build common/user-namespace/base | kubectl apply -f -
 
 kubectl get pods -n cert-manager
