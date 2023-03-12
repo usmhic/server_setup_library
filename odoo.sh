@@ -37,4 +37,4 @@ PASSWORD=CHANGEME" > .env
 
 openssl rand -base64 30
 
-docker-compose up -d
+sudo docker-compose up -d
