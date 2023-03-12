@@ -1,2 +1,2 @@
-# server_setup_libary
+# server_setup_library
 Server setup scripts
